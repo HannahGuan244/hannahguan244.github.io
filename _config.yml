@@ -1,0 +1,20 @@
+title: Hannah's Academic Page
+description: Applied Mathematics, Computer Science & Economics · Harvard College
+url: "https://hannahguan244.github.io" 
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Site navigation (used in header)
+navigation:
+  - title: About
+    url: /
+  - title: Projects
+    url: /projects/
+
+# Social / contact links
+email: hguan@college.harvard.edu
+github_username: HannahGuan244
+linkedin_url: "https://www.linkedin.com/in/hannah-guan-763550197/" 

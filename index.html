@@ -1,0 +1,31 @@
+---
+layout: default
+title: About
+---
+
+<section class="bio">
+  <img class="bio-photo" src="{{ '/assets/photo.jpg' | relative_url }}" alt="Your Name">
+
+  <div class="bio-text">
+    <h1>Hannah Guan</h1>
+    <p class="affiliation">
+      Undergraduate · Harvard College<br>
+      Applied Mathematics in Computer Science &amp; Economics
+    </p>
+
+    <p>
+      Hi! I'm currently an undergraduate at Harvard studying Applied Math in Computer Science and Economics.
+      I'm interested in 
+    </p>
+
+    <p>
+      Filler text
+    </p>
+
+    <div class="bio-links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      {% if site.linkedin_url != "" %}<a href="{{ site.linkedin_url }}">LinkedIn</a>{% endif %}
+    </div>
+  </div>
+</section>
