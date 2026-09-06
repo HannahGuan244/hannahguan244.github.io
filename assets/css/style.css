@@ -316,3 +316,41 @@ body {
   .site-nav a { margin-left: 1rem; margin-right: 1rem; }
   .bio-photo { width: 120px; height: 120px; }
 }
+
+/* ── Recent News ── */
+.news {
+  margin-bottom: 2.5rem;
+}
+
+.news-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.news-list li {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.news-date {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-right: 0.4rem;
+}
+
+.news-list a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
