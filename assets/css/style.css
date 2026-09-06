@@ -469,3 +469,75 @@ body {
     max-height: 160px;
   }
 }
+
+/* ── Teaching ── */
+.teaching {
+  margin-bottom: 2.5rem;
+}
+
+.teaching-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.teaching-list li {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.teaching-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.teaching-role {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.teaching-term {
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+/* ── Selected Awards ── */
+.awards {
+  margin-bottom: 2.5rem;
+}
+
+.awards-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.awards-list li {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.awards-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.awards-year {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-right: 0.4rem;
+}
