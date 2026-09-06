@@ -356,7 +356,7 @@ body {
 }
 
 /* ── Project Card: Authors & Links ── */
-.project-authors {
+.project-card .project-authors {
   font-size: 0.84rem;
   color: var(--color-text-muted);
   margin-bottom: 0.15rem;
