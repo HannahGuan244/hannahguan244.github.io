@@ -357,26 +357,34 @@ body {
 
 /* ── Project Card: Authors & Links ── */
 .project-authors {
-  font-size: 0.85rem;
+  font-size: 0.84rem;
   color: var(--color-text-muted);
   margin-bottom: 0.15rem;
 }
 
 .project-links {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
 }
 
-.project-links a {
-  font-size: 0.85rem;
+.project-links a,
+.project-links a:visited {
+  font-size: 0.75rem;
   font-weight: 500;
-  color: var(--color-accent);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: var(--color-tag-bg);
+  color: var(--color-text-muted);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
-.project-links a:hover {
-  border-bottom-color: var(--color-accent);
+.project-links a:hover,
+.project-links a:visited:hover {
+  background: var(--color-accent-light);
+  color: var(--color-card-bg);
 }
