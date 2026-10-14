@@ -177,6 +177,13 @@ body {
   background: var(--color-accent-light);
 }
 
+.equal-note {
+  font-size: 0.84rem;
+  color: var(--color-text-muted);
+  margin-top: -1.2rem;
+  margin-bottom: 1.4rem;
+}
+
 /* ── Research / Project Cards ── */
 .project-list {
   display: flex;
