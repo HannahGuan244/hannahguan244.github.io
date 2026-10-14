@@ -178,8 +178,8 @@ body {
 }
 
 .equal-note {
-  font-size: 0.84rem;
-  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  color: #9a9a9a;
   margin-top: -1.2rem;
   margin-bottom: 1.4rem;
 }
