@@ -233,6 +233,16 @@ body {
   color: var(--color-text);
 }
 
+.project-card p + p {
+  margin-top: 0.6rem;
+}
+
+.project-card p a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
@@ -347,6 +357,21 @@ body {
 .news-list li:last-child {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.news-sublist {
+  list-style: disc;
+  margin: 0.5rem 0 0 1.4rem;
+  gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-list .news-sublist li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .news-date {
