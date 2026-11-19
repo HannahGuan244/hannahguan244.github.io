@@ -1,0 +1,96 @@
+---
+---
+
+% Rendered by jekyll-scholar on /publications/ (grouped by year) and on the
+% About page (entries with selected = {true}).
+% Custom fields: abbr (venue badge), pdf (PDF button; any URL), code (Code button),
+% preview (thumbnail in assets/img/publication_preview/), abstract (ABS toggle).
+
+@article{guan2026subseasonal,
+  abbr      = {Nature},
+  title     = {Advancing Subseasonal Forecasting with Machine Learning},
+  author    = {Guan*, Hannah and Mouatadid*, Soukayna and Orenstein, Paulo and Cohen, Judah and Dong, Haiyu and Ni, Zekun and Berman, Jeremy and Flaspohler, Genevieve and Lu, Alex and Schloer, Jakob and Talib, Joshua and Weyn, Jonathan A. and Mackey, Lester},
+  journal   = {Nature},
+  year      = {2026},
+  pdf       = {https://www.nature.com/articles/s41586-026-11126-x},
+  code      = {https://github.com/mouatadid/pbc},
+  blog      = {https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/},
+  preview   = {subseasonal.png},
+  selected  = {true},
+  abstract  = {Built Probabilistic Bias Correction (PBC), a machine learning framework that corrects systematic bias in subseasonal weather forecasts (2-6 week lead times) by learning to adjust historical probabilistic forecasts. Applied to ECMWF's leading dynamical and AI models, PBC doubles the AI Forecasting System's subseasonal skill and improves the debiased dynamical model's skill for the vast majority of pressure, temperature, and precipitation targets. In ECMWF's 2025 real-time forecasting competition, it placed first across all variables and lead times, ahead of six national forecasting centers and 34 competing teams worldwide. Better subseasonal forecasts have real implications for agriculture, water management, and disaster preparedness.}
+}
+
+@inproceedings{cakar2026optimizing,
+  abbr            = {ICLR-W},
+  title           = {Optimizing Against Safety Representations: Activation-Guided Adversarial Suffixes and the Geometry of Refusal},
+  author          = {Çakar, Ege and Guan, Hannah and Kehe, Kayden},
+  booktitle       = {ICLR 2026 Workshop on Representational Alignment; AAAI Summer Symposium},
+  year            = {2026},
+  pdf             = {https://arxiv.org/abs/2607.08883},
+  code            = {https://github.com/Ege-Cakar/ImprovingGCG},
+  preview         = {gcg.png},
+  selected        = {true},
+  abstract        = {Studied how LLM safety behavior is represented internally by introducing Activation-Guided GCG, an adversarial suffix attack that targets a model's internal refusal direction instead of its output, plus Soft-GCG, a continuous relaxation of the normally discrete optimization. Found that refusal is distributed across many layers rather than localized to a single site, informing how alignment researchers should think about where safety representations actually live inside a model.}
+}
+
+@inproceedings{guan2026debate,
+  abbr      = {AAAI-SS},
+  title     = {When Debate Fails: An Empirical Study of Incentive Misalignment in Prover-Estimator Games},
+  author    = {Guan, Hannah and Hou, Charles},
+  booktitle = {AAAI Summer Symposium},
+  year      = {2026},
+  pdf       = {https://doi.org/10.1609/aaaiss.v9i1.42904},
+  abstract  = {Ran the first end-to-end empirical test of "debate" as an AI alignment mechanism, using RL agents built on LLMs on verifiable long-context reasoning tasks. Found that even with rewards carefully aligned to theoretical assumptions, agents converge on degenerate strategies that exploit weaknesses in the estimator rather than argue truthfully, surfacing a gap between game-theoretic guarantees and what gradient-based training actually learns.}
+}
+
+@article{guan2026hidinet,
+  abbr      = {DGOV},
+  title     = {HiDiNet: High-Dimensional Interpretive Network for Modeling Aging Health and Survival},
+  author    = {Guan, Hannah and Dhanani, Aashish and Zhang, Yu},
+  journal   = {ACM Digital Government: Research and Practice},
+  year      = {2026},
+  pdf       = {https://doi.org/10.1145/3833874},
+  preview   = {hidinet.png},
+  selected  = {true},
+  abstract  = {Developed HiDiNet, a model that predicts individual health trajectories and survival over continuous time using stochastic differential equations paired with an attention mechanism for irregular clinical visits. Evaluated on 20 years of longitudinal aging data, it outperformed standard RNN and Elastic-Net baselines while remaining interpretable through a 3D network visualizing how health variables interact with each other over time.}
+}
+
+@inproceedings{guan2024longitudinal,
+  abbr      = {JSM},
+  title     = {Innovative Method for Longitudinal Analysis of Aging Health and Mortality Rate Prediction},
+  author    = {Guan, Hannah and Greiner, Garrett and Martinez, Logan},
+  booktitle = {Proceedings of the Joint Statistical Meetings (JSM)},
+  year      = {2024},
+  pdf       = {https://doi.org/10.5281/zenodo.14004714},
+  abstract  = {Developed an early longitudinal model for jointly predicting health trajectories and mortality risk from repeated biomarker measurements, building on the biodemographic literature that treats aging as a high-dimensional, multi-variable process. This project laid the groundwork for the SDE-based approach later developed into HiDiNet.}
+}
+
+@inproceedings{guan2022diabetes,
+  abbr      = {ACM BCB},
+  title     = {Predicting Diabetes in Imbalanced Datasets using Neural Networks},
+  author    = {Guan, Hannah and Zhang, Chonghao},
+  booktitle = {13th ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB)},
+  year      = {2022},
+  pdf       = {https://doi.org/10.1145/3535508.3545540},
+  abstract  = {Investigated how different resampling strategies (under-, over-, and hybrid sampling) affect neural network performance on diabetes prediction, where diabetic cases are typically a small minority of the dataset. Also tested how combining resampling with feature selection affects predictive accuracy, addressing a common failure mode in clinical ML where rare-but-important cases get under-predicted.}
+}
+
+@article{li2022methylation,
+  abbr      = {TCBB},
+  title     = {Age Prediction by DNA Methylation in Neural Networks},
+  author    = {Li, Lechuan and Zhang, Chonghao and Liu, Shiyu and Guan, Hannah and Zhang, Yu},
+  journal   = {IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  year      = {2022},
+  pdf       = {https://doi.org/10.1109/TCBB.2021.3084596},
+  abstract  = {Proposed Correlation Pre-Filtered Neural Network (CPFNN), which uses Spearman correlation to pre-filter hundreds of thousands of DNA methylation features before training, addressing the severe overfitting that occurs when sample sizes are small relative to feature counts. CPFNN outperformed standard linear "epigenetic clock" formulas and regularized neural networks, predicting age with a mean absolute error of 2.7 years.}
+}
+
+@inproceedings{guan2021genetics,
+  abbr      = {ACM BCB},
+  title     = {The Genetics of Human Aging: Predicting Age and Age-Related Diseases by Deep Mining High Dimensional Biomarker Data},
+  author    = {Guan, Hannah},
+  booktitle = {12th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB)},
+  year      = {2021},
+  pdf       = {https://doi.org/10.1145/3459930.3469508},
+  abstract  = {Explored deep learning approaches to predict biological age and age-related disease risk from high-dimensional genetic biomarker data, examining the relationship between epigenetic markers and all-cause mortality. This early project helped establish the aging and biomarker research direction that later work (HiDiNet, CPFNN) built on.}
+}

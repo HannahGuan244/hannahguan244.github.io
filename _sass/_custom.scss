@@ -1,0 +1,15 @@
+/*******************************************************************************
+ * Site-specific style overrides, loaded last from assets/css/main.scss.
+ ******************************************************************************/
+
+// More breathing room above each About-page section header
+// (news, selected publications, teaching, selected awards).
+.post article > h2,
+.post article > .clearfix > h2 {
+  margin-top: 2rem;
+}
+
+// Smaller social icons at the bottom of the About page (al-folio default: 4rem).
+.social .contact-icons {
+  font-size: 2.5rem;
+}

@@ -1,47 +1,37 @@
-# Personal Academic Website
+# hannahguan244.github.io
 
-A clean, minimal Jekyll site for GitHub Pages.
+Personal academic site built with [al-folio](https://github.com/alshedivat/al-folio) v1.
+Layouts, styles and scripts come from the `al_folio_*` gems; this repo holds content and config.
 
-## Quick Start
+## Where things live
 
-1. **Create your GitHub repo** named `yourusername.github.io`
-2. Copy all these files into the repo
-3. Edit `_config.yml` with your name, email, and social links
-4. Replace `assets/photo.jpg` with your headshot
-5. Edit `index.html` (bio) and `research/index.html` (projects)
-6. Push to `main` — your site goes live in ~2 minutes
+| What                                    | File                                       |
+| --------------------------------------- | ------------------------------------------ |
+| Bio, teaching, awards                   | `_pages/about.md`                          |
+| Publications (+ "selected" on About)    | `_bibliography/papers.bib`                 |
+| Publication thumbnails                  | `assets/img/publication_preview/`          |
+| News items                              | `_news/`                                   |
+| Social links                            | `_data/socials.yml`                        |
+| CV                                      | `assets/cv.pdf`, `_pages/cv.md`            |
+| Site settings                           | `_config.yml`                              |
 
-## Local Development
+`_layouts/about.liquid` is a local copy of al_folio_core's About layout, changed so that
+content after `<!-- below-publications -->` in `about.md` renders below the selected publications.
+
+Site-specific CSS goes in `_sass/_custom.scss`, imported by a local copy of al_folio_core's
+`assets/css/main.scss` (the only change there is the final `@use "custom";`).
+
+## Local development
 
 ```bash
-gem install bundler jekyll
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 
 Then open `http://localhost:4000`.
 
-## File Structure
+## Deployment
 
-```
-├── _config.yml          # Site settings & navigation
-├── _layouts/
-│   └── default.html     # Base HTML template
-├── assets/
-│   ├── css/style.css    # All styles
-│   └── photo.jpg        # Your headshot
-├── index.html           # Bio / About page
-├── research/
-│   └── index.html       # Research & Projects page
-└── Gemfile              # Ruby dependencies
-```
-
-## Adding a New Project
-
-Open `research/index.html` and duplicate a `<div class="project-card">` block.
-
-## Custom Domain
-
-1. Add a `CNAME` file containing your domain (e.g. `yourname.com`)
-2. Configure DNS with your registrar (A records or CNAME to GitHub)
-3. Enable HTTPS in repo Settings → Pages
+Pushing to `main` runs `.github/workflows/deploy.yml`, which builds the site and pushes `_site`
+to the `gh-pages` branch. GitHub Pages must be set to serve from the `gh-pages` branch
+(Settings → Pages → Build and deployment → Deploy from a branch → `gh-pages` / root).
